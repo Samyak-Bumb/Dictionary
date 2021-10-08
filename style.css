@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 *:not(i){
     font-family: "Poppins", sans-serif;
 }
 body{
-    background: #8EC5FC;
+    background: #8ec5fc;
 }
-.container{
+.main{
     background-color: #ffffff;
     width: 90vmin;
     position: absolute;
@@ -33,6 +33,10 @@ body{
     outline: none;
     border-bottom: 3px solid #ae9cff;
     font-size: 16px;
+}
+.search-box input::selection{
+    color: #8ec5fc;
+    background: #000;
 }
 .search-box button{
     padding: 15px 0;
@@ -59,11 +63,16 @@ body{
     margin-top: 80px;
 }
 .result button{
-    background-color: transparent;
-    color: #ae9cff;
+    color: #000;
     border: none;
     outline: none;
     font-size: 18px;
+    background: transparent;
+    opacity: 0.2;
+    transition: all 200ms ease;
+}
+.result button:hover{
+    opacity: 1;
 }
 .result .details{
     display: flex;
@@ -85,4 +94,8 @@ body{
 .error{
     margin-top: 80px;
     text-align: center;
+}
+::selection{
+    color: #fff;
+    background: #ae9cff;
 }
