@@ -5,21 +5,26 @@
     box-sizing: border-box;
 }
 *:not(i){
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main: #ae9cff;
+    --white: #fff;
+    --grey: #575a7b;
 }
 body{
     background: #8ec5fc;
 }
 .main{
-    background-color: #ffffff;
-    width: 90vmin;
+    padding: 80px 50px;
+    width: 85vmin;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
-    padding: 80px 50px;
     border-radius: 10px;
-    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+    background: var(--white);
+    box-shadow: 0 20px 40px rgba(38,33,61,0.2);
 }
 .search-box{
     width: 100%;
@@ -31,21 +36,21 @@ body{
     width: 70%;
     border: none;
     outline: none;
-    border-bottom: 3px solid #ae9cff;
+    border-bottom: 3px solid var(--main);
     font-size: 16px;
 }
 .search-box input::selection{
-    color: #8ec5fc;
-    background: #000;
+    color: var(--white);
+    background: #fe95e7;
 }
 .search-box button{
     padding: 15px 0;
-    width: 25%;
-    background-color: #ae9cff;
+    width: 26%;
+    background-color: var(--main);
     border: none;
     outline: none;
-    color: #ffffff;
-    border-radius: 5px;
+    color: var(--white);
+    border-radius: 6px;
 }
 .search-box button:hover{
     cursor: pointer;
@@ -66,7 +71,7 @@ body{
     color: #000;
     border: none;
     outline: none;
-    font-size: 18px;
+    font-size: 20px;
     background: transparent;
     opacity: 0.2;
     transition: all 200ms ease;
@@ -82,12 +87,12 @@ body{
     font-size: 14px;
 }
 .word-meaning{
-    color: #575a7b;
+    color: var(--grey);
 }
 .word-example{
-    color: #575a7b;
+    color: var(--grey);
     font-style: italic;
-    border-left: 5px solid #ae9cff;
+    border-left: 5px solid var(--main);
     padding-left: 20px;
     margin-top: 30px;
 }
@@ -96,6 +101,6 @@ body{
     text-align: center;
 }
 ::selection{
-    color: #fff;
-    background: #ae9cff;
+    color: var(--white);
+    background: var(--main);
 }
