@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+	.container {
+		padding: 40px 20px;
+		overflow: auto;
+	}
+	.search-box button {
+		font-size: 14px;
+	}
+}
